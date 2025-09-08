@@ -1,24 +1,22 @@
 {% extends 'base.html' %}{% block content %}
 
 
-<h1>This is Dashboard</h1>
+<h1>This is Products page</h1>
+
 &nbsp;
 <table class="table">
  <tr>
  <th>Name</th>
- <th>Age</th>
- <th>URL</th>
-
+ <th>Price</th>
  </tr>
- {% for customer in customers %}
+ {% for product in products %}
  <tr>
- <td>{{customer.name}}</td>
- <td>{{customer.age}}</td>
- <td><a href="{% url 'customer' customer.id %}">View</a></td>
+ <td>{{product.name}}</td>
+ <td>{{product.price}}</td>
  </tr>
  {% endfor %}
-
 </table>
+
 <a href="{% url 'home' %}"><button type="button" class="btn btn-success">Home Window</button></a>
 
 {% endblock %}
