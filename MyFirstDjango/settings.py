@@ -26,11 +26,11 @@ SECRET_KEY = 'django-insecure-)klwcx00%vx@h+@-h7734(=s@22ssfnw0e5_gf7lhjvthxi$h(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['mydjango1.onrender.com','127.0.0.1']
+ALLOWED_HOSTS = ['mydjango1-a00c.onrender.com','127.0.0.1']
 
 
 # Application definition
-
+ 
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
